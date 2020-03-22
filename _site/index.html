@@ -3,46 +3,49 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Home - </title>
+    <title>home - sight site</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500&display=swap" rel="stylesheet">  </head>
   <body>
-    <div class="fixed inset-x-0 text-right py-3 px-8 text-white z-50">
-  <div class="bg-black opacity-50 absolute inset-0 z-0"></div>
-  <div class="relative z-10">
-    <a href="#">Home</a>
-    <a href="#gallery" class="ml-4">Gallery</a>
-    <a href="#about" class="ml-4">About</a>
-    <a href="#contact" class="ml-4">Contact</a>
-  </div>
-</div>
-<div
-  class="relative h-screen bg-fixed flex items-center justify-center hero-image z-0"
+    <div class="fixed inset-x-0 top-0 text-right py-3 px-8 text-white z-50">
+      <div class="bg-black opacity-50 absolute inset-0 z-0"></div>
+      <div class="relative z-10">
+        <a href="/#" class="font-light">home</a>
+        <a href="/#gallery" class="ml-4 font-light">gallery</a>
+        <a href="/#about" class="ml-4 font-light">about</a>
+        <a href="/#contact" class="ml-4 font-light">contact</a>
+      </div>
+    </div>
+    <div class="relative z-0">
+      <div
+  class="relative h-screen bg-fixed flex items-center justify-center hero-image"
 >
   <div class="bg-black opacity-50 absolute inset-0 z-0"></div>
   <div>
-    <h1 class="relative text-white text-6xl z-10 animated fadeInUp">
-      Welcome to my sight <span class="">site</span>
+    <h1 class="relative text-white text-6xl z-10 font-light animated fadeInUp">
+      welcome to my sight site :)
     </h1>
   </div>
 </div>
 <div id="gallery" class="py-16 px-4">
-  <h1 class="text-center text-6xl mb-12">Gallery</h1>
+  <div class="text-center">
+    <h1 class="inline-block text-6xl mb-12 border-b border-gray-600 font-light">gallery</h1>
+  </div>
   <div class="mb-4">
-    <a class="gallery-item" href="gallery-overview.html">
+    <a class="gallery-item" href="poke-overview.html">
   <div class="relative overflow-y-hidden">
     <div class="absolute inset-0 bg-black gallery-item-bg"></div>
     <div class="absolute inset-0 flex items-center justify-center">
-      <h2 class="text-bold text-4xl text-white gallery-item-label">
-        Welp
+      <h2 class="font-light text-4xl text-white gallery-item-label">
+        surprise
       </h2>
     </div>
     <img
       class="object-cover h-64 w-full"
-      src="/assets/images/other/sunglasses.jpg"
+      src="/assets/images/other/IMG_1388.jpg"
       alt=""
     />
   </div>
@@ -50,12 +53,12 @@
 
   </div>
   <div class="grid md:grid-cols-2 gap-4">
-    <a class="gallery-item" href="gallery-overview.html">
+    <a class="gallery-item" href="reflections-overview.html">
   <div class="relative overflow-y-hidden">
     <div class="absolute inset-0 bg-black gallery-item-bg"></div>
     <div class="absolute inset-0 flex items-center justify-center">
-      <h2 class="text-bold text-4xl text-white gallery-item-label">
-        Label
+      <h2 class="font-light text-4xl text-white gallery-item-label">
+        ap portolio concentration
       </h2>
     </div>
     <img
@@ -66,17 +69,17 @@
   </div>
 </a>
 
-    <a class="gallery-item" href="gallery-overview.html">
+    <a class="gallery-item" href="other-overview.html">
   <div class="relative overflow-y-hidden">
     <div class="absolute inset-0 bg-black gallery-item-bg"></div>
     <div class="absolute inset-0 flex items-center justify-center">
-      <h2 class="text-bold text-4xl text-white gallery-item-label">
-        Another Label
+      <h2 class="font-light text-4xl text-white gallery-item-label">
+        all of my other photos
       </h2>
     </div>
     <img
       class="object-cover h-64 w-full"
-      src="/assets/images/other/IMG_2168.jpg"
+      src="/assets/images/reflections/pink water.jpg"
       alt=""
     />
   </div>
@@ -85,7 +88,9 @@
   </div>
 </div>
 <div id="about" class="h-screen pt-16 bg-gray-200 flex flex-col items-center">
-  <h1 class="text-6xl mb-8">About</h1>
+  <div class="text-center">
+    <h1 class="inline-block text-6xl mb-12 border-b border-gray-600 font-light">about</h1>
+  </div>
   <div
     class="w-64 h-64 bg-cover mb-12"
     style="background-image: url(https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80)"
@@ -97,7 +102,9 @@
   </p>
 </div>
 <div id="contact" class="py-16">
-  <h1 class="text-center text-6xl mb-12">Contact</h1>
+  <div class="text-center">
+    <h1 class="inline-block text-6xl mb-12 border-b border-gray-600 font-light">contact</h1>
+  </div>
   <div class="flex justify-center">
     <form
       class="block flex-1 max-w-sm px-4"
@@ -131,13 +138,17 @@
     </form>
   </div>
 </div>
-<hr />
-<div class="text-right px-12 py-8 text-3xl">
+    </div>
+    <hr />
+<div class="text-right container mx-auto py-8 text-3xl">
   <a href="mailto:maryliang505@gmail.com" class="mr-4">
     <i class="fa fa-envelope-o" aria-hidden="true"></i>
   </a>
-  <a href="https://www.instagram.com/">
+  <a href="https://www.instagram.com/maryliang_" class="mr-4">
     <i class="fa fa-instagram" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.pinterest.ca/maryliang505/">
+    <i class="fa fa-pinterest" aria-hidden="true"></i>
   </a>
 </div>
 

@@ -8,8 +8,20 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500&display=swap" rel="stylesheet">  </head>
   <body>
-    {{ content }}
+    <div class="fixed inset-x-0 top-0 text-right py-3 px-8 text-white z-50">
+      <div class="bg-black opacity-50 absolute inset-0 z-0"></div>
+      <div class="relative z-10">
+        <a href="/#" class="font-light">home</a>
+        <a href="/#gallery" class="ml-4 font-light">gallery</a>
+        <a href="/#about" class="ml-4 font-light">about</a>
+        <a href="/#contact" class="ml-4 font-light">contact</a>
+      </div>
+    </div>
+    <div class="relative z-0">
+      {{ content }}
+    </div>
+    {% include footer.html %}
   </body>
 </html>

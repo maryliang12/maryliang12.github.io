@@ -1,0 +1,20 @@
+<div class="container mx-auto mb-4">
+  <div class="flex justify-center">
+    <h1 class="inline-block text-6xl pt-20 border-b border-gray-600 font-light animated fadeInUp">
+      {{ include.heading }}
+    </h1>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+    {% for image in (site.static_files | sort: 'title') %}
+      {% if image.path contains include.path %}
+        <div class="">
+          <img
+            src="{{ image.path }}"
+            alt="image"
+            class="object-cover h-64 w-full bg-gray-400 animated fadeInUp delay-1s"
+          />
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
