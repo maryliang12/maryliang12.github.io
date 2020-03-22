@@ -1,0 +1,15 @@
+<a class="gallery-item" href="{{ include.href }}">
+  <div class="relative overflow-y-hidden">
+    <div class="absolute inset-0 bg-black gallery-item-bg"></div>
+    <div class="absolute inset-0 flex items-center justify-center">
+      <h2 class="text-bold text-4xl text-white gallery-item-label">
+        {{ include.label }}
+      </h2>
+    </div>
+    <img
+      class="object-cover h-64 w-full"
+      src="/assets/images/{{ include.img }}"
+      alt=""
+    />
+  </div>
+</a>
