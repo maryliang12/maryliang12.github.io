@@ -3,61 +3,62 @@ layout: default
 title: "home"
 ---
 
-
-<div
-  class="relative h-screen bg-fixed flex items-center justify-center hero-image"
->
-  <div class="bg-black opacity-50 absolute inset-0 z-0"></div>
-  <div>
-    <h1 class="relative text-white text-6xl z-10 font-light animated fadeInUp">
+<div class="relative h-screen bg-fixed flex items-center justify-center">
+  <div class="absolute inset-0 z-0 overflow-hidden">
+    <img
+      src="https://source.unsplash.com/random"
+      alt=""
+      class="object-cover w-full"
+    />
+  </div>
+  <div class="bg-black opacity-50 absolute inset-0 z-10"></div>
+  <div class="relative z-20">
+    <h1 class="text-white text-6xl font-light animated fadeInUp">
       welcome to my sight site :)
     </h1>
   </div>
 </div>
 <div id="gallery" class="py-16 px-4">
   <div class="text-center">
-    <h1 class="inline-block text-6xl mb-12 border-b border-gray-600 font-light">gallery</h1>
+    <h1 class="inline-block text-6xl mb-12 border-b border-gray-600 font-light">
+      gallery
+    </h1>
   </div>
   <div class="mb-4">
-    {%
-      include gallery-item.html
-      img="other/IMG_1388.jpg"
-      href="poke-overview.html"
-      label="surprise"
-    %}
+    {% include gallery-item.html img="other/IMG_1388.jpg"
+    href="poke-overview.html" label="surprise" %}
   </div>
   <div class="grid md:grid-cols-2 gap-4">
-    {%
-      include gallery-item.html
-      img="other/sunglasses.jpg"
-      href="reflections-overview.html"
-      label="ap portolio concentration"
-    %}
-    {%
-      include gallery-item.html
-      img="reflections/pink water.jpg"
-      href="other-overview.html"
-      label="all of my other photos"
-    %}
+    {% include gallery-item.html img="other/sunglasses.jpg"
+    href="reflections-overview.html" label="ap portolio concentration" %} {%
+    include gallery-item.html img="reflections/pink water.jpg"
+    href="other-overview.html" label="all of my other photos" %}
   </div>
 </div>
 <div id="about" class="py-16 bg-gray-200 flex flex-col items-center">
   <div class="text-center">
-    <h1 class="inline-block text-6xl mb-12 border-b border-gray-600 font-light">about</h1>
+    <h1 class="inline-block text-6xl mb-12 border-b border-gray-600 font-light">
+      about
+    </h1>
   </div>
   <div
     class="w-64 h-64 bg-cover mb-12"
-    style="background-image: url(https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80)"
+    style="
+      background-image: url(https://images.unsplash.com/photo-1560180474-e8563fd75bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);
+    "
   ></div>
   <p class="mx-8 md:mx-32 lg:mx-64">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
-    facilis illum aspernatur, quae labore hic nemo maiores ad et, earum quia
-    nobis autem voluptatum doloribus ducimus aut voluptatibus doloremque ut?
+    I&apos;m currently a senior at Burnaby North Secondary School. I spend a
+    majority of my time on clubs like Grad Counsel Yearbook. I&apos;m passionate
+    about art and food. In the fall of 2020, I&apos;ll be attending KPU for the
+    Graphic Design for Marketing program. My favortite celebrity is Gordon Ramsay.
   </p>
 </div>
 <div id="contact" class="py-16">
   <div class="text-center">
-    <h1 class="inline-block text-6xl mb-12 border-b border-gray-600 font-light">contact</h1>
+    <h1 class="inline-block text-6xl mb-12 border-b border-gray-600 font-light">
+      contact
+    </h1>
   </div>
   <div class="flex justify-center">
     <form
@@ -67,7 +68,11 @@ title: "home"
     >
       <label class="block mb-4">
         <span class="block">Your Name:</span>
-        <input type="text" name="name" class="border-gray-400 border w-full p-2" />
+        <input
+          type="text"
+          name="name"
+          class="border-gray-400 border w-full p-2"
+        />
       </label>
       <label class="block mb-4">
         <span class="block">Your Email:</span>
